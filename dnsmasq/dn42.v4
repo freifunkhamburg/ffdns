@@ -1,0 +1,5 @@
+# config as of https://dn42.net/Services-DNS-Configuration
+
+server=/dn42/172.22.0.53
+server=/22.172.in-addr.arpa/172.22.0.53
+server=/23.172.in-addr.arpa/172.22.0.53
