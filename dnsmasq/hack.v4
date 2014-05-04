@@ -1,0 +1,9 @@
+# config as of http://wiki.hamburg.ccc.de/ChaosVPN:DNS
+# only works if host is directly in chaosvpn?
+
+server=/hack/172.31.0.5
+server=/31.172.in-addr.arpa/172.31.0.5
+server=/100.10.in-addr.arpa/172.31.0.5
+server=/101.10.in-addr.arpa/172.31.0.5
+server=/102.10.in-addr.arpa/172.31.0.5
+server=/103.10.in-addr.arpa/172.31.0.5

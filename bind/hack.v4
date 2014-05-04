@@ -1,0 +1,32 @@
+# config as of http://wiki.hamburg.ccc.de/ChaosVPN:DNS
+# only works if host is directly in chaosvpn?
+
+zone "hack" {
+  type static-stub;      
+  server-addresses { 172.31.0.5; };      
+};
+
+zone "31.172.in-addr.arpa" {
+  type static-stub;      
+  server-addresses { 172.31.0.5; };
+};
+
+zone "100.10.in-addr.arpa" {
+  type static-stub;      
+  server-addresses { 172.31.0.5; };
+};
+
+zone "101.10.in-addr.arpa" {
+  type static-stub;      
+  server-addresses { 172.31.0.5; };
+};
+
+zone "102.10.in-addr.arpa" {
+  type static-stub;      
+  server-addresses { 172.31.0.5; };
+};
+
+zone "103.10.in-addr.arpa" {
+  type static-stub;      
+  server-addresses { 172.31.0.5; };
+};
