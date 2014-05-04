@@ -1,0 +1,11 @@
+# ffhh
+server=/ffhh/fd51:2bb2:fd0d::101
+server=/ffhh/fd51:2bb2:fd0d::e01
+
+# 10.112.0.0/16 reverse
+server=/112.10.in-addr.arpa/fd51:2bb2:fd0d::101
+server=/112.10.in-addr.arpa/fd51:2bb2:fd0d::e01
+
+# FD51:2BB2:FD0D::/48 reverse
+server=/d.0.d.f.2.b.b.2.1.5.d.f.ip6.arpa/fd51:2bb2:fd0d::101
+server=/d.0.d.f.2.b.b.2.1.5.d.f.ip6.arpa/fd51:2bb2:fd0d::e01
