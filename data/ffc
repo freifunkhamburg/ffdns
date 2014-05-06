@@ -1,0 +1,4 @@
+# config as of http://wiki.freifunk.net/DNS
+
+domain=ffc
+server=10.8.6.6

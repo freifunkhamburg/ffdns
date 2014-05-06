@@ -1,0 +1,4 @@
+# config as of http://wiki.freifunk.net/DNS
+
+domain=rzl
+server=172.22.36.1
