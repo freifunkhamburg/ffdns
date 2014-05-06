@@ -92,7 +92,7 @@ def create_config(srcdir, fmtclass, exclude=None, filters=[]):
             domains = []
             servers = []
 
-            with file(fpath) as f:
+            with open(fpath) as f:
                 formatter.add_comment("\n%s\n" % fname)
                 for line in f:
                     if COMMENT_CHAR in line:
@@ -142,10 +142,19 @@ if __name__ == "__main__":
         "v6": lambda option, value: option != "server" or try_inet_pton(AF_INET6, value),
     }
     parser = OptionParser()
-    parser.add_option("-f", "--format", dest="fmt", help="Create config in format FMT. Possible values: %s. Default: dnsmasq" % ", ".join(formatters.keys()), metavar="FMT", choices=formatters.keys(), default="dnsmasq")
-    parser.add_option("-s", "--sourcedir", dest="src", help="Use files in DIR as input files. Default: data/", metavar="DIR", default="data")
-    parser.add_option("-x", "--exclude", dest="exclude", help="Exclude the comma-separated list of FILES in the sourcedir from the generation", metavar="FILES", default="")
-    parser.add_option("--filter", dest="filter", help="Only include certain servers. Possible choices: %s" % ", ".join(filters.keys()), choices=filters.keys())
+    parser.add_option("-f", "--format", dest="fmt",
+        help="Create config in format FMT. Possible values: %s. Default: dnsmasq" % ", ".join(formatters.keys()), metavar="FMT",
+        choices=list(formatters.keys()),
+        default="dnsmasq")
+    parser.add_option("-s", "--sourcedir", dest="src",
+        help="Use files in DIR as input files. Default: data/", metavar="DIR",
+        default="data")
+    parser.add_option("-x", "--exclude", dest="exclude",
+        help="Exclude the comma-separated list of FILES in the sourcedir from the generation", metavar="FILES",
+        default="")
+    parser.add_option("--filter", dest="filter",
+        help="Only include certain servers. Possible choices: %s" % ", ".join(filters.keys()),
+        choices=list(filters.keys()))
 
     (options, args) = parser.parse_args()
 
