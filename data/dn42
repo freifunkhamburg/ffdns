@@ -1,0 +1,7 @@
+# config as of https://dn42.net/Services-DNS-Configuration
+
+domain=dn42
+domain=22.172.in-addr.arpa
+domain=23.172.in-addr.arpa
+
+server=172.22.0.53
