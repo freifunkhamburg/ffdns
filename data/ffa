@@ -1,0 +1,7 @@
+# config as of http://wiki.freifunk.net/DNS
+
+domain=ffa
+
+server=10.11.63.26
+server=10.11.10.15
+server=10.11.0.8

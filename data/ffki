@@ -1,0 +1,6 @@
+# config as of http://wiki.freifunk.net/DNS
+
+domain=ffki
+
+server=fda1:384a:74de:4242::1
+server=fda1:384a:74de:4242::2
