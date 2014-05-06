@@ -1,0 +1,8 @@
+domain=ffhh
+domain=112.10.in-addr.arpa
+domain=d.0.d.f.2.b.b.2.1.5.d.f.ip6.arpa
+
+server=fd51:2bb2:fd0d::101
+server=fd51:2bb2:fd0d::e01
+server=10.112.1.1
+server=10.112.14.1
